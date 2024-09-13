@@ -1,0 +1,18 @@
+<?php
+
+use Ratchet\Server\IoServer;
+use MyApp\MouseTracker;
+use Ratchet\Http\HttpServer;
+use Ratchet\WebSocket\WsServer;
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+/**
+ * Start the WebSocket server on port 8080
+ * $server = IoServer::factory(
+ *    new HttpServer(
+ *       new WsServer(new MouseTracker())
+ * ),
+ *  8080
+ * );
+ */
